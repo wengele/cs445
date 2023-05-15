@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <h2>Swap the Image</h2>
+
+    <img id="image1" src="tree-gfabb98cb1_1280.jpg" alt="firstimg" width="100px" height="100px">
+
+    <img id="image2" src="wengel.jpg" alt="secondimg" width="100px" height="100px">
+    <button id="swapbtn" onclick="swap()"> swap</button>
+    <div id="divv">
+
+
+    </div>
+
+    <script>
+
+        function swap() {
+
+            let img1 = document.getElementById("image1");
+            let img2 = document.getElementById("image2");
+
+            let temp = img1.src;
+            img1.src = img2.src;
+            img2.src = temp;
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>

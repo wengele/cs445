@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .special {
+            background-color: pink;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="tree-gfabb98cb1_1280.jpg" alt="" id="img" class="speical">
+    <label for="">hi</label>
+    <label for="">hello</label>
+    <label for="">hey</label>
+    <button id="click">click</button>
+    <button id="click2">click</button>
+    <script>
+        const PuppyDom = document.getElementById("img");
+
+        console.log(`${PuppyDom.id}, ${PuppyDom.src}`);
+        console.log(PuppyDom.className);
+
+        const pupArray = document.getElementsByTagName("label");
+
+        for (let i = 0; i < pupArray.length; i++) {
+
+            pupArray[i].className = "special";
+        }
+
+        function evenListner() {
+            console.log("yeaaaa")
+        }
+        btn1 = document.getElementById('click');
+        btn = document.getElementById('click2');
+
+        btn1.onclick = function () { console.log("new") };
+        btn.addEvenListner('click2', evenListner);
+
+
+
+    </script>
+
+
+</body>
+
+</html>

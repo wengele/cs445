@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <h2>sign up</h2>
+    <label for=""> username: </label>
+    <input type="text" id="username" minlength="8" required><br>
+    <label for=""> password: </label>
+    <input type="text" id="password" minlength="10" required><br>
+
+
+    <button id="onc">reset</button>
+    <button id="on">submit</button>
+
+    <script>
+        let userName = document.getElementById("username");
+        let password = document.getElementById("password");
+        document.getElementById("on").onclick = function () {
+            if (userName.value < 8 || password.value < 10) {
+
+                console.log("error");
+            } else {
+                location.href = "this.html";
+            }
+        }
+
+        document.getElementById("onc").onclick = function () {
+            re
+
+
+        }
+
+    </script>
+</body>
+
+</html>

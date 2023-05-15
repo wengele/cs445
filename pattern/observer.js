@@ -33,3 +33,16 @@ function ob2(message) {
 facebook.subcriber(ob1);
 facebook.subcriber(ob2);
 facebook.notify("hello");
+
+
+const subject = new Subject();
+subject.subscribe(msg => console.log(`hello ${msg}`));
+const foo = msg => console.log(`observer ${msg}`)
+subject.subcriber(foo);
+
+subject.emit("hi");
+subject.unsubscribe(foo);
+subject.emit("low");
+write implmentation fo the observer pattern
+
+

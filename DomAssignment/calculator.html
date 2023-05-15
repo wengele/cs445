@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="number" id="number1" placeholder="enter first number">
+    <input type="number" id="number2" placeholder="enter second number">
+    <input type="number" id="result">
+    <button id="btn" onclick="add()"> add</button>
+    <button id="btn" onclick="subtract()"> subtract</button>
+
+
+
+</body>
+<script>
+    function add() {
+        let Fnumber = document.getElementById("number1").value;
+        let Snumber = document.getElementById("number2").value;
+        let addition = parseInt(Fnumber) + parseInt(Snumber);
+        let result = document.getElementById("result");
+        result.value = addition;
+
+    }
+    function subtract() {
+        let Fnumber = document.getElementById("number1").value;
+        let Snumber = document.getElementById("number2").value;
+        let subtraction = parseInt(Fnumber) - parseInt(Snumber);
+        let result = document.getElementById("result");
+        result.value = subtraction;
+
+    }
+</script>
+
+</html>
