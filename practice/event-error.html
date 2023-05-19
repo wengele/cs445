@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">
+        click me
+    </button>
+
+
+    <script>
+        function eventhandle() {
+            console.log('btn');
+        }
+
+        document.getElementById('btn').onclick = eventhandle;//we should add() becuase it will immidatly call it but if we have closure it will work sometimes. on click it will return the closure inner value
+        // becuase onclick requires function refernce.
+    </script>
+</body>
+
+</html>
