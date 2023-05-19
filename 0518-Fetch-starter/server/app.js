@@ -7,6 +7,6 @@ app.use(cors());
 app.use(express.json());
 app.use('/products', productRouter);
 
-app.listen(3000, () => {
+app.listen(300, () => {
   console.log(`shopping listening on port 3000`);
 })
