@@ -13,10 +13,7 @@ async function fetchUser() {
 function findUser(users) {
     for (let i = 0; i < users.length; i++) {
         let employee = users[i];
-        console.log(employee.gender);
-        console.log(employee.name.first + " " + employee.name.last);
-        console.log(employee.email);
-        console.log(employee.picture.large);
+
         document.getElementById('img' + (i + 1)).src = employee.picture.large;
         document.getElementById('person-name-' + (i + 1)).textContent = employee.name.first + " " + employee.name.last;
         document.getElementById('gender' + (i + 1)).textContent = "Gender: " + employee.gender;
